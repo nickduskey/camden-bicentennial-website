@@ -8,7 +8,7 @@
     </label>
     <div class="control">
       <div class="select">
-        <select id="stateSelect">
+        <select id="stateSelect" name="state">
           <option
             v-for="state in states"
             :key="state.abbreviation"

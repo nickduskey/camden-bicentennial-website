@@ -6,7 +6,7 @@
       >Entry Type</label>
     <div class="control">
       <div class="select">
-        <select id="typeSelect">
+        <select id="typeSelect" name="type">
           <option
             v-for="type in types"
             :key="type.id"

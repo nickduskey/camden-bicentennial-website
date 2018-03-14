@@ -51,6 +51,12 @@
           name="zip_code"
         />
         <type-select />
+        <description-input />
+        <input
+          type="hidden"
+          name="_cc"
+          value="keesleto@gmail.com,katieduskey@gmail.com"
+          />
         <base-button/>
       </form>
       <p class="is-size-7" id="terms">By submitting this form, your organization agrees to defend, indemnify and hold harmless the Village of Camden and the Camden Bicentennial Committee from any claim, demand, suit, loss, cost of expense or any damage which may be asserted, claimed or recovered against or from the municipality by reason of any damage to property, personal injury or bodily injury.</p>
@@ -64,6 +70,7 @@ import BaseInput from '@/components/BaseInput'
 import BaseButton from '@/components/BaseButton'
 import StateSelect from '@/components/StateSelect'
 import TypeSelect from '@/components/TypeSelect'
+import DescriptionInput from '@/components/DescriptionInput'
 
 export default {
   name: 'register-form',
@@ -71,7 +78,8 @@ export default {
     BaseInput,
     BaseButton,
     StateSelect,
-    TypeSelect
+    TypeSelect,
+    DescriptionInput
   }
 }
 </script>
