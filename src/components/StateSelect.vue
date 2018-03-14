@@ -13,6 +13,7 @@
             v-for="state in states"
             :key="state.abbreviation"
             v-bind:value="state.abbreviation"
+            v-bind:selected="state.name === 'OHIO' ? true : false"
           >{{ state.name }}</option>
         </select>
       </div>

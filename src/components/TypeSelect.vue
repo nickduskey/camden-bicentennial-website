@@ -41,14 +41,6 @@ export default {
           name: 'Musical Group/Band'
         },
         {
-          id: 5,
-          name: 'Specialty Vehicle'
-        },
-        {
-          id: 6,
-          name: 'Military Vehicle'
-        },
-        {
           id: 7,
           name: 'Other'
         }

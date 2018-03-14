@@ -1,28 +1,30 @@
 <template>
    <nav class="navbar is-white" role="navigation" aria-label="main navigation">
-     <div class="navbar-brand">
-       <nav-bar-logo />
-       <div class="navbar-burger"
-          :class="{'is-active': isActive}"
-          @click="isActive = !isActive"
-       >
-         <span></span>
-         <span></span>
-         <span></span>
-       </div>
-     </div>
-     <transition name="slide-fade">
-       <div id="navbarItems" class="navbar-menu" :class="{'is-active': isActive}">
-         <div class="navbar-end">
-           <nav-bar-item
-             v-for="link in links"
-             :key="link.id"
-             v-bind:linkText="link.text"
-             v-bind:path="link.path"
-           />
+     <div class="container">
+       <div class="navbar-brand">
+         <nav-bar-logo />
+         <div
+           class="navbar-burger"
+           :class="{'is-active': isActive}"
+           @click="toggleMenu"
+           data-target="navMenu"
+         >
+           <span></span>
+           <span></span>
+           <span></span>
          </div>
        </div>
-     </transition>
+         <div id="navMenu" class="navbar-menu" :class="{'is-active': isActive}">
+           <div class="navbar-end">
+             <nav-bar-item
+               v-for="link in links"
+               :key="link.id"
+               v-bind:linkText="link.text"
+               v-bind:path="link.path"
+             />
+           </div>
+         </div>
+     </div>
    </nav>
 </template>
 
@@ -36,9 +38,9 @@ export default {
     NavBarLogo,
     NavBarItem
   },
-  props: ['isActive'],
   data () {
     return {
+      isActive: false,
       links: [
         {
           id: 1,
@@ -51,6 +53,11 @@ export default {
           path: '/register'
         }
       ]
+    }
+  },
+  methods: {
+    toggleMenu () {
+      this.isActive = !this.isActive
     }
   }
 }

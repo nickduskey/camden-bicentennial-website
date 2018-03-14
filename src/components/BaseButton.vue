@@ -2,7 +2,7 @@
   <div class="field">
     <div class="control">
       <button
-        class="button is-link"
+        class="button is-primary is-rounded is-medium"
         type="submit"
       >Submit</button>
     </div>

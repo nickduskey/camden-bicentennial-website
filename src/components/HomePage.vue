@@ -4,11 +4,11 @@
       <img src="../assets/bicentennial-logo.png"/>
       <countdown-timer/>
       <h2 class="is-size-2">Sign up for the Bicentennial Parade!</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse enim mauris, aliquet nec mi vel, viverra pellentesque justo. Morbi dapibus iaculis est vitae posuere. Maecenas ligula dolor, tristique id hendrerit in, fermentum non lectus. Morbi sit amet laoreet ante. In ultricies nisl id efficitur sagittis. Proin ultrices elementum tortor at molestie. Ut porta lorem eros, aliquam hendrerit risus vehicula vel. Integer quis lacus vitae diam pharetra finibus at quis tellus.
-      </p>
+      <h3 class="is-size-3">Saturday, September 1st 10am</h3>
+      <p>Our parade will bring special recognition to the Village of Camden.</p>
+      <p>We are asking organizations and community members to help us celebrate Camden's Bicentennial.  The parade will take place on Saturday, September 1st at 10:00am with line up at 9:00am.  Please return this form by <strong>Friday, August 10, 2018</strong>.  You will receive your confirmation and instructions by email.  If you have any questions please call <a href="tel:19374523142">937-452-3142</a>.</p>
       <div>
-        <router-link id="registerButton" class="button is-primary" to="/register">Register for the Parade</router-link>
+        <router-link id="registerButton" class="button is-primary is-rounded is-medium" to="/register">Register for the Parade</router-link>
       </div>
     </div>
     <div class="container is-fluid">
