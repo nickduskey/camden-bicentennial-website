@@ -1,6 +1,16 @@
 <template>
   <div class="column is-mobile is-three-quarters-tablet is-half-desktop">
     <h2 class="is-size-2">Register for the Parade</h2>
+    <p>Prizes include:</p>
+    <p>
+      <ul>
+        <li>People's choice - Recipient is selected by most votes from the public.</li>
+        <li>Best interpretation of an era from Camden.</li>
+        <li>Best overall - best depicts the parades theme, craftsmanship and difficulty of construction.</li>
+        <li>Community spirit - the entry which demonstrates the most local community spirit.</li>
+        <li>Best youth float - youth group or organization 17 and under who bests conveys its message.</li>
+      </ul>
+    </p>
     <div class="box">
       <form
         id="registerForm"
@@ -31,25 +41,6 @@
           placeholder="your@email.com"
           name="contact_email"
         />
-        <base-input
-          type="text"
-          label="Street Address"
-          placeholder="Organization address"
-          name="address_1"
-        />
-        <base-input
-          type="text"
-          label="City"
-          placeholder="City"
-          name="city"
-        />
-        <state-select />
-        <base-input
-          type="text"
-          label="Zip Code"
-          placeholder="Zip Code"
-          name="zip_code"
-        />
         <type-select />
         <description-input />
         <input
@@ -68,7 +59,6 @@
 <script>
 import BaseInput from '@/components/BaseInput'
 import BaseButton from '@/components/BaseButton'
-import StateSelect from '@/components/StateSelect'
 import TypeSelect from '@/components/TypeSelect'
 import DescriptionInput from '@/components/DescriptionInput'
 
@@ -77,7 +67,6 @@ export default {
   components: {
     BaseInput,
     BaseButton,
-    StateSelect,
     TypeSelect,
     DescriptionInput
   }
